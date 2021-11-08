@@ -9,8 +9,11 @@ function Carousel(props) {
   const [cardIdx, setCardIdx] = useState(0);
   const card = props.cardData[cardIdx];
   const total = props.cardData.length;
-  const goForward = () => setCardIdx(cardIdx + 1);
-  const goBackward = () => setCardIdx(cardIdx - 1);
+  const goForward = () => setCardIdx((cardIdx + 1) % total);
+  const goBackward = () => {
+    const n = cardIdx === 0 ? total : cardIdx;
+    setCardIdx(n - 1)
+  };
 
   return (
     <div className="Carousel">
