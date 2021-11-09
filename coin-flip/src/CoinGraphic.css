@@ -1,0 +1,6 @@
+.CoinGraphic {
+  width: 400px;
+  height: 400px;
+  background-image: url("./heads-and-tails.jpg");
+  background-repeat: no-repeat;
+}

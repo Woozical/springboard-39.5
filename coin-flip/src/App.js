@@ -1,8 +1,9 @@
+import CoinFlipper from "./CoinFlipper";
 
 function App() {
   return (
     <div className="App">
-      Hello World
+      <CoinFlipper />
     </div>
   );
 }
